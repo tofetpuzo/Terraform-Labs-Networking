@@ -46,7 +46,6 @@ variable "vpc_a_public_subnet_cidr" {
   type        = string
 }
 
-
 variable "vpc_b_private_subnet_cidr" {
   description = "CIDR block for the private subnet in VPC B"
   type        = string
@@ -67,7 +66,6 @@ description = "CIDR block for the public subnet in VPC C"
 type        = string
 }
 
-
 variable "vpc_a_private_subnet_name" {
   description = "Name of the private subnet in VPC A"
   type        = string
@@ -85,6 +83,7 @@ variable "vpc_b_private_subnet_name" {
   type        = string
   default     = "private-subnet-b"
 }
+
 variable "vpc_b_public_subnet_name" {
   description = "Name of the public subnet in VPC B"
   type        = string
