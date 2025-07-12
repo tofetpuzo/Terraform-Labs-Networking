@@ -12,7 +12,7 @@ module "vpc" {
 
   availability_zones = local.availability_zones
 
-   # Define the CIDR blocks for each VPC
+  # Define the CIDR blocks for each VPC
   vpc_cidr_a = local.vpc_a_cidr
   vpc_cidr_b = local.vpc_b_cidr
   vpc_cidr_c = local.vpc_c_cidr
@@ -30,10 +30,10 @@ module "vpc" {
   # Define the names of the private and public subnets in each VPC
   vpc_a_private_subnet_name = local.vpc_a_private_subnet_name
   vpc_a_public_subnet_name  = local.vpc_a_public_subnet_name
-  
+
   vpc_b_private_subnet_name = local.vpc_b_private_subnet_name
   vpc_b_public_subnet_name  = local.vpc_b_public_subnet_name
-  
+
   vpc_c_private_subnet_name = local.vpc_c_private_subnet_name
   vpc_c_public_subnet_name  = local.vpc_c_public_subnet_name
 
